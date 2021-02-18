@@ -47,9 +47,6 @@ function divider(num) {
     else if (num % 7 == 0) {
         console.log("Число делится на 7");
     }
-    else if (num % 10 == 0) {
-        console.log("Число делится на 10");
-    }
     else {
         console.log("Не делится");
     }
@@ -83,13 +80,13 @@ function vacation(quantity, groupName, dayName) {
         if (dayName == "Friday") {
             price = quantity * 10.90;
             if (quantity >= 100) {
-                price = (quantity - 10) * 16;
+                price = (quantity - 10) * 10.90;
             }
         }
         else if (dayName == "Saturday") {
             price = quantity * 15.60;
             if (quantity >= 100) {
-                price = (quantity - 10) * 16;
+                price = (quantity - 10) * 15.60;
             }
         }
         else if (dayName == "Sunday") {
